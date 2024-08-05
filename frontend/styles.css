@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destino-card {
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destino-card:hover {
+    transform: translateY(-5px);
+}
+
+.destino-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.atrativo-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.atrativo-item:last-child {
+    border-bottom: none;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+#search .form-select,
+#search .input-group {
+    margin-bottom: 10px;
+}
+.card-body .btn {
+    margin-right: 5px;
+}
+@media (min-width: 768px) {
+    #search .form-select,
+    #search .input-group {
+        margin-bottom: 0;
+    }
+}
+
+.atrativo {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.atrativo .btn-danger {
+    margin-top: 10px;
+}
