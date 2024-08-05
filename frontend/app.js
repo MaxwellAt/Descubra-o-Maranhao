@@ -185,22 +185,19 @@ function showNotification(message, type = 'success') {
 function showOnMap(lat, lng, name) {
     const position = { lat: parseFloat(lat), lng: parseFloat(lng) };
     map.setCenter(position);
-    map.setZoom(14); // Ajuste o zoom conforme necessário
+    map.setZoom(14);
 
-    // Crie um novo marcador para destacar o destino
     const marker = new google.maps.Marker({
         position: position,
         map: map,
         title: name
     });
 
-    // Opcional: Adicione uma janela de informações ao marcador
     const infoWindow = new google.maps.InfoWindow({
         content: `<h5>${name}</h5>`
     });
     infoWindow.open(map, marker);
 
-    // Opcional: Remova o marcador após alguns segundos
     setTimeout(() => {
         marker.setMap(null);
         infoWindow.close();
@@ -325,7 +322,6 @@ document.getElementById('addDestinoForm').addEventListener('submit', async funct
             throw new Error('Erro ao adicionar destino');
         }
 
-        // Após adicionar o destino, recarregue todos os destinos do servidor
         await refreshDestinos();
 
         const modal = bootstrap.Modal.getInstance(document.getElementById('addDestinoModal'));
@@ -338,7 +334,6 @@ document.getElementById('addDestinoForm').addEventListener('submit', async funct
     }
 });
 
-// Nova função para recarregar os destinos do servidor
 async function refreshDestinos() {
     try {
         const response = await fetch('http://localhost:3000/destinos');
