@@ -1,7 +1,8 @@
 ﻿# Descubra o Maranhão
 
 Um sistema que cria uma API para cadastro de destinos turísticos no Maranhão.
-Publicação no [linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7226967930062700544/)
+
+Publicação no [linkedin!](https://www.linkedin.com/feed/update/urn:li:activity:7226967930062700544/)
 ## Pré-requisitos
 
 - Node.js (versão 14.x ou superior)
