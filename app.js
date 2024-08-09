@@ -5,7 +5,7 @@ let isAuthenticated = false;
 
 async function initMap() {
     try {
-        const response = await fetch('http://localhost:3000/destinos');
+        const response = await fetch('https://truthful-magic-production.up.railway.app/destinos');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -248,7 +248,7 @@ async function handleLogin(event) {
     const senha = document.getElementById('password').value;
     
     try {
-        const response = await fetch('http://localhost:3000/usuarios/validate', {
+        const response = await fetch('https://truthful-magic-production.up.railway.app/usuarios/validate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -310,7 +310,7 @@ document.getElementById('addDestinoForm').addEventListener('submit', async funct
     };
 
     try {
-        const response = await fetch('http://localhost:3000/destinos', {
+        const response = await fetch('https://truthful-magic-production.up.railway.app/destinos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -336,7 +336,7 @@ document.getElementById('addDestinoForm').addEventListener('submit', async funct
 
 async function refreshDestinos() {
     try {
-        const response = await fetch('http://localhost:3000/destinos');
+        const response = await fetch('https://truthful-magic-production.up.railway.app/destinos');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

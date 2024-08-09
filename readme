@@ -1,9 +1,0 @@
-# Aviso Importante
-
-Este projeto inclui um middleware de autenticação que exige um cabeçalho específico para acessar rotas protegidas. Para operações de CRUD na tabela de clientes, o mesmo cabeçalho e valor são necessários.
-
-## Por favor, note:
-
-- **Autenticação Necessária**: Apenas usuários autenticados com o cabeçalho `admin: admin` poderão realizar operações de CRUD.
-- **Inserção de Clientes**: A funcionalidade de inserção de clientes é restrita para garantir que apenas administradores possam adicionar novos clientes, evitando que usuários não autorizados possam cadastrar clientes ou manipular destinos turísticos.
-- **Foco do Projeto**: A escolha de não incluir uma página de cadastramento de clientes reflete o foco principal do projeto na criação e gerenciamento de destinos turísticos. Assim, a criação de clientes é gerida diretamente via API para manter a integridade e a segurança do sistema.
